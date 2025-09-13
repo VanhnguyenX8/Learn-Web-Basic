@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        min-height: 100vh;
+        margin: 0;
+        background: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-card {
+        background: #e0f7fa;
+        padding: 32px 24px;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+        max-width: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .profile-avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #00bcd4;
+        background: #fff;
+    }
+
+    .profile-name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .profile-email {
+        color: #0097a7;
+        margin: 0 0 8px 0;
+        font-size: 1rem;
+    }
+
+    .profile-info {
+        width: 100%;
+    }
+
+    .profile-info label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 2px;
+    }
+
+    .profile-info div {
+        margin-bottom: 10px;
+    }
+
+    .edit-btn {
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
+
+    .edit-btn:hover {
+        background: #0097a7;
+    }
+</style>
+
+<body>
+    <div class="profile-card">
+        <img class="profile-avatar" src="https://i.pravatar.cc/150?img=3" alt="Avatar">
+        <h2 class="profile-name"></h2>
+        <div class="profile-email"></div>
+        <div class="profile-info">
+            <div>
+                <label">Ngày Sinh:</label>
+                    <span>23/07/2002</span>
+
+            </div>
+            <div>
+                <label">Giới Tính:</label>
+                    <span>Nam</span>
+
+            </div>
+            <div>
+                <label">Địa Chỉ:</label>
+                    <span>Ninh Binh</span>
+
+            </div>
+        </div>
+        <button class="edit-btn" onclick="alert('Chức năng đang phát triển!')">Chỉnh sửa</button>
+    </div>
+</body>
+
+</html>
